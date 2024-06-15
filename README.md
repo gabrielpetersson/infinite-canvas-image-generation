@@ -4,6 +4,12 @@ An experiment I built over the weekend 2023. Uploaded cause a lot of people aske
 
 Try it here! [https://image-generation-ui.vercel.app/](https://image-generation-ui.vercel.app/)
 
+# Run
+
+web: `npm install && npm run dev`
+
+server: `cd server && npm install && npm run build && npm run start`
+
 # TODO
 
 - zoom in while editing/isDirty global

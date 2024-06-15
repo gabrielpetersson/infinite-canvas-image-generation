@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 13px;
+
+  color-scheme: light;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  touch-action: none;
+  background-color: #f9fafb;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+}
+
+.material-symbols-outlined {
+  user-select: none;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.material-fat {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 600,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.canvas-item {
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.24) 0px 2px 3px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 6px 0px,
+    rgb(255, 255, 255) 0px 0px 0px 1px inset;
+}
+
+.gradient-button {
+  background: linear-gradient(45deg, #ec4899, rgb(99 102 241), rgb(168 85 247));
+  transition: background-position 0.2s;
+  background-size: 200% 10%;
+  background-position: right bottom;
+}
+
+.gradient-button:hover {
+  background-position: left bottom;
+}
+
+.img-grid {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-auto-rows: 1fr;
+}
