@@ -4,5 +4,5 @@ export const getApi = () => {
     return "http://localhost:3000";
   }
   //   return "https://image-generation-f9781f09260d.herokuapp.com";
-  return "https://remember-thismj-ui-production-3f09.up.railway.app";
+  return import.meta.env.VITE_API_URL;
 };
